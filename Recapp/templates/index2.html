@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My artists</title>
+</head>
+<body>
+    <h1>My Artists</h1>
+    <form method="POST" action="http://127.0.0.1:5000/results" > 
+        <label for="selected_artist">Choose your favorite Artist:</label>
+
+    <select name="selectedArtist" id="selected_artist" multiple>
+       <option value="">Please Choose your Favorite Artist</option>
+       {% for i in your_list %}
+       <option value={{ i }} >{{ i }}</option>
+       {% endfor %}
+    
+    </select>
+    <input type="submit" value="Search">
+       </form>
+</body>
+</html>

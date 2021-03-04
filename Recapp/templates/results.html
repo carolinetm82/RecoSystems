@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>My artists {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/myartists.css"/>
+  </head>
+  <body>
+ <h1> Results page </h1>
+{% for i in art_selected1 %}
+<p>{{ i }}</p>
+{% endfor %}
+  <br>
+  <p><a href="http://127.0.0.1:5000/">Return to homepage</a></p>
+   </body>
+</html>
