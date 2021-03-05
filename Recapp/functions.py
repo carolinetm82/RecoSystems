@@ -7,7 +7,7 @@ from lightfm.cross_validation import random_train_test_split
 from lightfm.data import Dataset
 
 def recherche(comparer, comparateur):
-    # Je verifi pour recuperer les nom complet des artists
+    # Get the full name of the artists
     retourner=[]
     for liste in comparateur:
         for i in comparer:
